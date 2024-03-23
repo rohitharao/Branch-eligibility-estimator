@@ -40,7 +40,7 @@ model.add(Dense(10, activation='relu'))
 model.add(Dense(10, activation='relu'))
 model.add(Dense(len(set(y)), activation='softmax'))
 
-st.title('Rank Analysis')
+st.title('Colligate pathway predictor')
 
 # Compile the Keras model
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
