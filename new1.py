@@ -40,7 +40,7 @@ model.add(Dense(10, activation='relu'))
 model.add(Dense(10, activation='relu'))
 model.add(Dense(len(set(y)), activation='softmax'))
 
-st.title('Colligate pathway predictor')
+st.title('Branch eligibility estimator')
 
 # Compile the Keras model
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
